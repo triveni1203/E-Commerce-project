@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Premium Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Urban Style</h2>
+
+    <input type="text" id="searchInput" placeholder="Search products...">
+
+    <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cartCount">0</span>
+    </div>
+</header>
+
+<div class="categories">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('shoes')">Shoes</button>
+    <button onclick="filterCategory('shirts')">Shirts</button>
+    <button onclick="filterCategory('watches')">Watches</button>
+</div>
+
+<div class="products" id="products"></div>
+
+<div class="cart-panel" id="cartPanel">
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <h4>Total: $<span id="cartTotal">0</span></h4>
+    <button class="checkout-btn">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
